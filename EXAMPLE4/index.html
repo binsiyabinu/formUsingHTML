@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            HTML form
+        </title>
+        <style>
+        </style>
+    </head>
+    <body>
+      <!--form tag starts with action which contains a page -->
+        <form action="submit.html" method="GET">
+          <!-- first fieldset contains name and email-->
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label>
+                Name:
+                    <input type="text" name="name" placeholder="Enter your name"/>
+                </label>
+                <br/>
+                <label>
+                Email:
+                    <input type="email" name="email" placeholder="Enter your email"/>
+                </label>
+            </fieldset>
+            <!--end of first fieldset-->
+            <br/>
+            <!--second fieldset deals with user reviews-->
+            <fieldset>
+              <legend>Your Review:</legend>
+              <label>How did you hear about us?
+                  <select name="review">
+                      <option value="Google">Google</option>
+                      <option value="Whatsapp">Whatsapp</option>
+                      <option value="Friends">Friends</option>
+                      <option value="Advertisement">Advertisement</option>
+                  </select>
+              </label>
+              <br/>
+              <br/>
+              <label>Would you visit again?<br/>
+                  <input type="radio" name="visit" value="yes" checked> Yes
+                  <input type="radio" name="visit" value="no"> No
+                  <input type="radio" name="visit" value="maybe"> May be
+              </label>
+              <br/>
+              <!--comment box using text area-->
+              <label>Comments:<br>
+                  <textarea name="comments" cols="20" rows="4" placeholder="Enter your Comments"></textarea>
+              </label>
+              <br/>
+              <label>
+                  <input type="checkbox" name="reviews" value="yes" checked="checked"/>
+                  Sign me up for email updates
+              </label>
+              <br/>
+              <!--submit button to perform the action specified-->
+              <input type="submit" value="Submit review"/>
+          </fieldset>
+          <!--end of second fieldset-->
+      </form>
+      <!--end of form-->
+    </body>
+</html>
